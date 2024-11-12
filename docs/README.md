@@ -118,7 +118,8 @@
 </details>
 
 ## Last changes (commits)
-* 550faf4 (HEAD -> new_features_465976) bug fixed
+* 9ac7d66 enabled testing
+* 550faf4 bug fixed
 * 159f7da added rectangle.py
 * d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
 * 8ba9aeb L-03: Circle and square added
