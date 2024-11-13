@@ -159,6 +159,7 @@ self.assertNotEqual(rectangle.area(10, 90), rectangle.area(10, 9))
 </details>
 
 ## Last changes (commits)
+* 85cf887 table added, info added to readme
 * 9ac7d66 enabled testing
 * 550faf4 bug fixed
 * 159f7da added rectangle.py
