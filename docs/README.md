@@ -117,6 +117,47 @@
 Пример вызова: area(4) -> 25.132741228718345
 </details>
 
+## Описание тестов
+<details>
+<summary>${\color {yellow} {\mathcal {test \textunderscore area \textunderscore zero} } }$ </summary>
+Тестирует случай нулевой площади
+
+Пример:
+
+res = rectangle.area(10, 0) \
+self.assertEqual(res, 0)
+</details>
+<details>
+<summary>${\color {yellow} {\mathcal {test \textunderscore area \textunderscore one} } }$ </summary>
+Тестирует случай единичной площади
+
+Пример:
+
+res = rectangle.area(1, 1) \
+self.assertEqual(res, 1)
+</details>
+
+<details>
+<summary>${\color {yellow} {\mathcal {test \textunderscore area \textunderscore sum} } }$ </summary>
+Тестирует корректность работы суммы площадей 2 фигур
+
+Пример:
+
+a = rectangle.area(10, 15) \
+b = rectangle.area(20, 25) \
+c = rectangle.area(30, 15) \
+d = rectangle.area(20, 10) \
+self.assertEqual(a+b, c+d)
+</details>
+<details>
+<summary>${\color {yellow} {\mathcal {test \textunderscore area \textunderscore not \textunderscore eq} } }$ </summary>
+Тестирует корректность работы сравнения фигур с неравными площадями
+
+Пример:
+
+self.assertNotEqual(rectangle.area(10, 90), rectangle.area(10, 9))
+</details>
+
 ## Last changes (commits)
 * 9ac7d66 enabled testing
 * 550faf4 bug fixed

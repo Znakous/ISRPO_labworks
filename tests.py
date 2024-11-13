@@ -2,6 +2,10 @@ import unittest
 from math import pi
 import rectangle, circle, square, triangle
 
+import math
+from math import *
+from math import pi
+
 """
 each class tests its own file's functions using 4 metrics (zero value, minimal integer value, sum of 2, difference)
 tested functions are "area" and "perimeter"
@@ -18,8 +22,8 @@ class TestRectangle (unittest.TestCase):
     def test_area_sum(self):
         a = rectangle.area(10, 15)
         b = rectangle.area(20, 25)
-        c = rectangle.area(10+20, 15)
-        d = rectangle.area(20, 25-15)
+        c = rectangle.area(30, 15)
+        d = rectangle.area(20, 10)
         self.assertEqual(a+b, c+d)
     def test_area_not_eq(self):
         self.assertNotEqual(rectangle.area(10, 90), rectangle.area(10, 9))
@@ -71,7 +75,7 @@ class TestSquare (unittest.TestCase):
         c = square.area(50)
         self.assertEqual(a+b, c)
     def test_area_not_eq(self):
-        self.assertNotEqual(square.area(10), square.area(9))
+        self.assertNotEqual(square.area(9), square.area(10))
     def test_perimeter_zero(self):
         self.assertEqual(square.perimeter(0), 0)
     def test_perimeter_one(self):
@@ -92,8 +96,8 @@ class TestTriangle (unittest.TestCase):
     def test_area_sum(self):
         a = triangle.area(10, 15)
         b = triangle.area(20, 25)
-        c = triangle.area(10+20, 15)
-        d = triangle.area(20, 25-15)
+        c = triangle.area(30, 15)
+        d = triangle.area(20, 10)
         self.assertEqual(a+b, c+d)
     def test_area_not_eq(self):
         self.assertNotEqual(triangle.area(10, 90), triangle.area(10, 9))
