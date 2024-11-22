@@ -1,0 +1,9 @@
+name: Geometric Lib
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Tests
+        run: python.exe -m unittest tests.py
