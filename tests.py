@@ -109,3 +109,6 @@ class TestTriangle (unittest.TestCase):
         self.assertEqual(triangle.perimeter(10, 20, 30), triangle.perimeter(3, 7, 16) + triangle.perimeter(7, 13, 14))
     def test_perimeter_not_eq(self):
         self.assertNotEqual(triangle.perimeter(10, 20, 5), triangle.perimeter(1, 20, 5))
+
+if __name__ == '__main__':
+    unittest.main()
